@@ -1,0 +1,20 @@
+{
+  "name": "slutprojekt-native-javascript",
+  "version": "1.0.0",
+  "description": "![](screen.png)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psykisk/slutprojekt-native-javascript.git"
+  },
+  "keywords": [],
+  "author": "Joakim & Omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psykisk/slutprojekt-native-javascript/issues"
+  },
+  "homepage": "https://github.com/Psykisk/slutprojekt-native-javascript#readme"
+}

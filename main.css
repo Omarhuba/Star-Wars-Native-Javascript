@@ -1,0 +1,242 @@
+/* Mörk grå: #535556
+Gul: #FFD600
+Details header: #748687
+Grå: #8E8E8E
+Ljusgrå: #C4C4C4
+Ljusare grå: #E1DEDE
+Highlightgrå: #444444
+main: #424242   */
+* {
+  margin-top: 0;
+}
+body {
+  width: 1400px;
+  font-family: "Ropa Sans", sans-serif;
+  letter-spacing: 4px;
+  margin: auto;
+}
+header {
+  background-image: url(assets/header-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+
+.header h1 {
+  color: #ffd600;
+  width: 30%;
+  padding-top: 100px;
+  padding-left: 70px;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+main {
+  background-color: #424242;
+  height: 45rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section:nth-of-type(1) {
+  background-color: #c4c4c4;
+  transform: translateY(-6%);
+  height: 36rem;
+  width: 26rem;
+  border-radius: 10px 10px 0 0;
+}
+
+section:nth-of-type(1) h2 {
+  background-color: #535556;
+  color: #ffd600;
+  margin: 0;
+  height: 3.5rem;
+  border-radius: 10px 10px 0px 0px;
+  letter-spacing: 6px;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 15px 0;
+  grid-row: 1;
+  grid-column: 1/7;
+  text-align: center;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+}
+
+.characters ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.characters ul li:hover {
+  background-color: #444444;
+  cursor: pointer;
+}
+
+.characters li:nth-child(odd) {
+  color: #eee;
+  background-color: grey;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.characters ul li.active:after {
+  content: "►";
+  font-size: 1rem;
+  margin-left: 1rem;
+  color: black;
+}
+
+.characters li:nth-child(even) {
+  color: grey;
+  background-color: #e1dede;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 1.5rem;
+  border: none;
+  padding-top: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.prev {
+  grid-row: 1;
+  grid-column: 5;
+}
+.next {
+  grid-row: 1;
+  grid-column: 8;
+}
+
+.prev,
+.next {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+span:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 6/7;
+  text-align: center;
+}
+span:nth-of-type(2) {
+  grid-row: 1;
+  grid-column: 7/9;
+}
+
+section:nth-of-type(2) {
+  background-color: #8e8e8e;
+  transform: translateY(-6%);
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.15);
+  height: 36rem;
+  width: 26rem;
+  border-radius: 10px 10px 0 0;
+}
+
+section:nth-of-type(2) h2 {
+  display: flex;
+  background-color: #748687;
+  color: #ffd600;
+  margin: 0;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  letter-spacing: 6px;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.details {
+  background-color: #c4c4c4;
+  margin: 0;
+  padding: 25px 0 20px 20px;
+  font-size: 1.1rem;
+  line-height: 5px;
+  height: 180px;
+}
+.details h3 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+nav {
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav button {
+  border: none;
+  background-color: white;
+  color: #a58b19;
+  padding: 3%;
+  font-weight: bolder;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  letter-spacing: 0.1rem;
+}
+.activeBtn {
+  background-color: #8e8e8e;
+  color: #ffd600;
+}
+
+.extraInfo {
+  color: whitesmoke;
+  padding: 10px 0 0 20px;
+  font-size: 1.1rem;
+}
+
+.extraInfo h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.extraInfo p {
+  margin: 0;
+  padding-top: 7px;
+  text-transform: capitalize;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid black;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.info-loader {
+  margin-top: 5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

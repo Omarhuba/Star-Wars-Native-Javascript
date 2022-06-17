@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starwars Catalog</title>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>STAR WARS CATALOG</h1>
+    </header>
+    <main>
+      <section class="characters">
+        <h2>Characters</h2>
+       <div class="loader hidden ul-loader"></div>
+         <ul>
+
+         </ul>
+        <article class="buttons">
+          <button class="prev hidden">◁</button>
+          <span class="page-number"></span><span> / 9</span>
+          <button class="next">▷</button>
+        </article>
+      </section>
+      <section>
+        <h2>Details</h2>
+        <article class="details"></article>
+      <!-- <nav>
+        <button class="planet">Planet</button>
+        <button class="species">Species</button>
+        <button class="vehicles">Vehicles</button>
+        <button class="starships">Starships</button>
+      </nav> -->
+        <article class="extraInfo"></article>
+
+        <div class="loader hidden info-loader"></div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
